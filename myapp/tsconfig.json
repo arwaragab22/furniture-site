@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2017",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "jsx": "react-jsx", // أو "react" حسب نوع المشروع
+    "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -13,6 +13,10 @@
     "noEmit": true,
     "strict": true
   },
-  "include": ["src", "vite.config.ts"], // تأكد أن المسارات صحيحة
+  "include": [
+    "src",
+    "src/types", // ✅ أضف هذا السطر
+    "vite.config.ts"
+  ],
   "exclude": ["node_modules"]
 }
